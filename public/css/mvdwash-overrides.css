@@ -1,0 +1,10 @@
+/*Menu / Header*/
+header .navbar-brand img {
+  max-height: 52px;
+}
+.d-none {
+  display: none;
+}
+.height-100 {
+  height: 100%;
+}

@@ -4,27 +4,55 @@
             <div class="position-absolute right-70px lg-right-20px top-minus-20px w-250px sm-w-180px xs-w-150px opacity-1"><img src="https://www.mvdwash.com.uy/imagenesweb/sillas_relacionadas.png" alt=""></div>
             <span class="ps-25px pe-25px mb-20px text-uppercase text-base-color fs-12 lh-40 fw-700 border-radius-100px bg-gradient-light-gray-transparent d-inline-flex"><i class="bi bi-patch-check fs-16 me-5px"></i>(FAQS)</span>
             <h3 class="fw-700 text-dark-gray ls-minus-1px">Preguntas Frecuentes (FAQS).</h3> 
-            <div class="accordion accordion-style-02" id="servicios-faq" data-active-icon="icon-feather-minus" data-inactive-icon="icon-feather-plus">
-
-                {%- for faq in faqSillones %}
+            <div class="accordion accordion-style-02" id="accordion-style-02" data-active-icon="icon-feather-minus" data-inactive-icon="icon-feather-plus">
                 <!-- start accordion item -->
-                <div class="accordion-item {{ "active-accordion" if loop.index == 1 }}">
+                <div class="accordion-item active-accordion">
                     <div class="accordion-header border-bottom border-color-transparent-dark-very-light">
-                        <a href="#" data-bs-toggle="collapse" data-bs-target="#faq{{loop.index}}" aria-expanded={{ "true" if loop.index == 1 else "false" }} data-bs-parent="#servicios-faq">
+                        <a href="#" data-bs-toggle="collapse" data-bs-target="#accordion-style-02-01" aria-expanded="true" data-bs-parent="#accordion-style-02">
                             <div class="accordion-title mb-0 position-relative text-dark-gray pe-30px">
-                                <i class="feather icon-feather-minus fs-20"></i><span class="fs-17 fw-500">{{faq.pregunta}}</span>
+                                <i class="feather icon-feather-minus fs-20"></i><span class="fs-17 fw-500">Puedo solicitar un servicio en menos de 24 hs?</span>
                             </div>
                         </a>
                     </div>
-                    <div id="faq{{loop.index}}" class="accordion-collapse {{ 'collapse show' if loop.index == 1 else 'collapse'}}" data-bs-parent="#servicios-faq">
+                    <div id="accordion-style-02-01" class="accordion-collapse collapse show" data-bs-parent="#accordion-style-02">
                         <div class="accordion-body last-paragraph-no-margin border-bottom border-color-transparent-dark-very-light">
-                            <p class="w-90 sm-w-95 xs-w-100">{{faq.respuesta}}</p>
+                            <p class="w-90 sm-w-95 xs-w-100">La disponibilidad dependerá de nuestra agenda. Normalmente, no tenemos problemas con los horarios, pero es posible que la disponibilidad de nuestras máquinas se vea limitada debido a la alta demanda de trabajos durante la semana. No obstante, siempre encontramos una solución. En situaciones de urgencia, como un calefón roto que está inundando la moqueta con agua, estaremos allí de inmediato. Puede contar con nosotros.</p>
                         </div>
                     </div>
                 </div>
                 <!-- end accordion item -->
-                {% endfor -%}
-                
+                <!-- start accordion item -->
+                <div class="accordion-item">
+                    <div class="accordion-header border-bottom border-color-transparent-dark-very-light">
+                        <a href="#" data-bs-toggle="collapse" data-bs-target="#accordion-style-02-02" aria-expanded="false" data-bs-parent="#accordion-style-02">
+                            <div class="accordion-title mb-0 position-relative text-dark-gray pe-30px">
+                                <i class="feather icon-feather-plus fs-20"></i><span class="fs-17 fw-500">Qué métodos de pago aceptan?</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="accordion-style-02-02" class="accordion-collapse collapse" data-bs-parent="#accordion-style-02">
+                        <div class="accordion-body last-paragraph-no-margin border-bottom border-color-transparent-dark-very-light">
+                            <p class="w-90 sm-w-95 xs-w-100">Ofrecemos diversas opciones de pago para mayor comodidad. Puedes pagar con tarjeta de crédito o débito a través de Mercado Pago, realizar una transferencia bancaria a nuestra cuenta en el BROU, o pagar en efectivo al finalizar el trabajo realizado.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end accordion item -->
+                <!-- start accordion item -->
+                <div class="accordion-item">
+                    <div class="accordion-header border-bottom border-color-transparent">
+                        <a href="#" data-bs-toggle="collapse" data-bs-target="#accordion-style-02-03" aria-expanded="false" data-bs-parent="#accordion-style-02">
+                            <div class="accordion-title mb-0 position-relative text-dark-gray pe-30px">
+                                <i class="feather icon-feather-plus fs-20"></i><span class="fs-17 fw-500">Cual es el horario de atención?</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="accordion-style-02-03" class="accordion-collapse collapse" data-bs-parent="#accordion-style-02">
+                        <div class="accordion-body last-paragraph-no-margin border-bottom border-color-transparent">
+                            <p class="w-90 sm-w-95 xs-w-100">Nuestro horario de atención teléfonica es de 8:00 a 19:00 hs, siempre respomndemos a la brevedad, si nos escribes respondemos lo antes posible, en menos de 24 hs hábiles... </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end accordion item -->
             </div>
         </div>
     </div> 

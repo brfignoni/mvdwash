@@ -1,0 +1,52 @@
+<!-- start section -->
+
+<div id="form-solicitar-presupuesto" class="container overlap-section overlap-section-three-fourth pt-7 pb-3" data-anime='{"el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 800, "delay": 500, "staggervalue": 150, "easing": "easeOutQuad" }'> 
+    <div class="row row-cols-md-1 justify-content-center">
+        <div class="col-xl-10">
+            <div class="bg-white p-8 border-radius-6px box-shadow-double-large">
+                <div class="row">
+                    <div class="col-9">
+                        <h3 class="alt-font text-dark-gray fw-700 ls-minus-2px mb-50px xs-mb-35px">Solicitar presupuesto</h3>
+                    </div>
+                    <div class="col-3 text-end" data-anime='{ "translateY": [30, 0], "translateX": [-30, 0], "opacity": [0,1], "duration": 600, "delay": 300, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <i class="bi bi-send icon-large text-dark-gray animation-zoom"></i>
+                    </div>
+                </div>
+                <!-- start contact form -->
+                <form action="email-templates/contact-form.php" method="post" class="row contact-form-style-02">
+                    <div class="col-md-6 mb-30px">
+                        <input class="input-name form-control required" type="text" name="nombre" placeholder="Tu nombre*" />
+                    </div>
+                    <div class="col-md-6 mb-30px">
+                        <input class="form-control required" type="email" name="email" placeholder="Tu email*" />
+                    </div>
+                    <div class="col-md-6 mb-30px">
+                        <input class="form-control required" type="tel" name="telefono" placeholder="Tu teléfono" />
+                    </div>
+                    <div class="col-md-6 mb-30px">
+                        <input class="form-control" type="text" name="asunto" placeholder="{{formServicioAsunto}}" />
+                    </div>
+                    <div class="col-md-12 mb-30px d-none">
+                        <input hidden class="form-control" type="text" name="servicio" placeholder="{{formServicio}}" />
+                    </div>
+                    <div class="col-md-12 mb-30px">
+                        <textarea class="form-control" cols="40" rows="4" name="mensaje" placeholder="Your message"></textarea>
+                    </div>
+                    <div class="col-xl-7 col-md-7 last-paragraph-no-margin">
+                        <p class="text-center text-md-start fs-15 lh-26">Te responderemos a la brevedad!</p>
+                    </div>
+                    <div class="col-xl-5 col-md-5 text-center text-md-end sm-mt-20px">
+                        <input type="hidden" name="redirect" value="">
+                        <button class="btn btn-base-color btn-medium btn-rounded btn-box-shadow submit" type="submit">Enviar Consulta</button>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-results mt-20px d-none"></div>
+                    </div>
+                </form>
+                <!-- end contact form -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- end section --> 
