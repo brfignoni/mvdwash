@@ -16,9 +16,11 @@
     {% include "head.html" %}
   </head>
   <body data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="#252840">  
-    {% include "header.html" %}
-    {{content | safe}}
-    {% include "footer.html" %}
-    {% include "footer-after.html" %}
+    <div class="page-layout">
+      {% include "header.html" %}
+      {{content | safe}}
+      {% include "footer.html" %}
+      {% include "footer-after.html" %}
+    </div>
   </body>
 </html>
