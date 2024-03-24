@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+    {% include "head.html" %}
+  </head>
+  <body data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="#252840">  
+    {% include "header.html" %}
+    {{content | safe}}
+    {% include "footer.html" %}
+    {% include "footer-after.html" %}
+  </body>
+</html>
