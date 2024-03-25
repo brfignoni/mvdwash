@@ -3,55 +3,26 @@ layout: base.njk
 title: Homepage
 keywords: limpieza, alfombras, moquettes, sillones, sofas, vapor, limpieza a vapor, sanitizacion, limpieza profunda 
 description: En Montevideo Wash nos dedicamos al servicio de Limpieza de Artículos de Hogar y Automotriz
+ocultarBotonPresupuesto: true
 ---
 <!-- start hero section -->
-        <section class="cover-background full-screen ipad-top-space-margin py-0 md-h-750px sm-h-650px" style="background-image:url('https://www.mvdwash.com.uy/imagenesweb/banner06.png');">
-            <div class="opacity-very-light bg-black"></div>
-            <div class="shape-image-animation bottom-0 p-0 w-100 d-none d-md-block"> 
-                <svg xmlns="http://www.w3.org/2000/svg" widht="3000" height="400" viewBox="0 180 2500 200" fill="#ffffff"> 
-                <path class="st1" d="M 0 250 C 1200 400 1200 50 3000 250 L 3000 550 L 0 550 L 0 250">
-                <animate
-                    attributeName="d"
-                    dur="5s"
-                    values="M 0 250 C 1200 400 1200 50 3000 250 L 3000 550 L 0 550 L 0 250;
-                            M 0 250 C 400 50 400 400 3000 250 L 3000 550 L 0 550 L 0 250;
-                            M 0 250 C 1200 400 1200 50 3000 250 L 3000 550 L 0 550 L 0 250"
-                    repeatCount="indefinite"
-                    />
-                </path>
-                </svg>
-            </div> 
-            <div class="container h-100"> 
-                <div class="row align-items-center h-100">
-                    <div class="col-xl-6 col-lg-8 col-md-10 position-relative z-index-1" data-anime='{ "el": "childs", "translateY": [0, 0], "perspective": [1200,1200], "scale": [1.05, 1], "rotateX": [30, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>   
-                        <h4 class="text-white fw-600 ls-minus-2px mb-25px">Servicio de Limpieza de Hogar Y Automotriz</h2> 
-                        <div><p class="fw-300 fs-18 w-85 sm-w-95 text-white opacity-6">Nos destacamos en la limpieza y sanitización de hogares y vehículos. Ofrecemos una amplia gama de servicios para satisfacer las necesidades individuales de cada cliente, y enfrentamos cada tarea con un compromiso y responsabilidad excepcionales.</p></div>
-                        <a href="https://www.youtube.com/watch?v=go8EF623WcY" target="blank" class="btn btn-extra-large btn-switch-text btn-gradient-purple-pink btn-rounded me-10px ls-0px mt-15px popup-youtube">
-                            <span>
-                                <span class="btn-double-text" data-text="Ver presentación">Ver presentación</span>
-                                <span><i class="fa-brands fa-youtube"></i></span>
-                            </span>
-                        </a>
-                        <a href="demo-it-business-contact.html" class="btn btn-extra-large btn-switch-text btn-transparent-white-light btn-rounded border-1 ls-0px mt-15px">
-                            <span>
-                                <span class="btn-double-text" data-text="Contacto">Contacto</span>
-                                <span><i class="fa-regular fa-envelope"></i></span>
-                            </span>
-                        </a>
-                    </div>  
-                </div> 
-            </div>
-        </section>
-        <!-- end hero section -->
+
+{% set introId = 'home' %}
+{% set introTitulo = 'Servicio de Limpieza de Hogar Y Automotriz' %}
+{% set introDescripcion = 'Nos destacamos en la limpieza y sanitización de hogares y vehículos. Ofrecemos una amplia gama de servicios para satisfacer las necesidades individuales de cada cliente, y enfrentamos cada tarea con un compromiso y responsabilidad excepcionales.' %}
+{% set ocultarIntroDescripcion = false %}
+{% set ocultarIntroBotones = false %}
+{% include "intro.njk" %}
+
         <!-- start section -->
-    <section class="pt-3 sm-pt-50px">
+    <section class="pt-3 sm-pt-50px pb-3">
             <div class="container">
                 <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center mb-7" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'>
                     <!-- start features box item -->
                     <div class="col icon-with-text-style-01 md-mb-30px">
                         <div class="feature-box feature-box-left-icon last-paragraph-no-margin">
                             <div class="feature-box-icon me-20px">
-                                <img src="https://www.mvdwash.com.uy/imagenesweb/tuerca.png" alt=""/>
+                                <img src="/assets/images/tuerca.png" alt=""/>
                             </div>
                             <div class="feature-box-content">
                                 <span class="d-inline-block fs-18 text-dark-gray fw-700 mb-5px">Maquinaria profesional</span>
@@ -64,7 +35,7 @@ description: En Montevideo Wash nos dedicamos al servicio de Limpieza de Artícu
                     <div class="col icon-with-text-style-01 md-mb-30px">
                         <div class="feature-box feature-box-left-icon last-paragraph-no-margin">
                             <div class="feature-box-icon me-20px">
-                                <img src="https://www.mvdwash.com.uy/imagenesweb/personal.png" alt=""/>
+                                <img src="/assets/images/personal.png" alt=""/>
                             </div>
                             <div class="feature-box-content">
                                 <span class="d-inline-block fs-18 text-dark-gray fw-700 mb-5px">Personal capacitado</span>
@@ -77,7 +48,7 @@ description: En Montevideo Wash nos dedicamos al servicio de Limpieza de Artícu
                     <div class="col icon-with-text-style-01 md-mb-30px">
                         <div class="feature-box feature-box-left-icon last-paragraph-no-margin">
                             <div class="feature-box-icon me-20px">
-                                <img src="https://www.mvdwash.com.uy/imagenesweb/estrellas.png" alt=""/>
+                                <img src="/assets/images/estrellas.png" alt=""/>
                             </div>
                             <div class="feature-box-content">
                                 <span class="d-inline-block fs-18 text-dark-gray fw-700 mb-5px">Trabajos con Garantía</span>
@@ -91,10 +62,10 @@ Proporcionamos a nuestros clientes un servicio respaldado por garantía. Para lo
                 <div class="row mb-10 align-items-center">
                     <div class="col-lg-5 position-relative md-mb-20">
                         <div class="w-70 xs-w-80" data-animation-delay="50" data-shadow-animation="true">
-                            <img src="https://www.mvdwash.com.uy/imagenesweb/640_nueva.png" alt="" class="border-radius-8px w-100">
+                            <img src="/assets/images/640_nueva.png" alt="" class="border-radius-8px w-100">
                         </div>
                         <div class="w-60 overflow-hidden position-absolute right-minus-15px xs-right-15px xs-w-60 bottom-minus-50px" data-shadow-animation="true" data-animation-delay="250" data-bottom-top="transform: translateY(50px)" data-top-bottom="transform: translateY(-50px)">
-                            <img src="https://www.mvdwash.com.uy/imagenesweb/empresa.png" alt="" class="border-radius-8px w-100 box-shadow-quadruple-large" />
+                            <img src="/assets/images/empresa.png" alt="" class="border-radius-8px w-100 box-shadow-quadruple-large" />
                         </div>
                     </div>
                     <div class="col-xl-5 col-lg-6 offset-lg-1" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'>
@@ -124,211 +95,40 @@ Proporcionamos a nuestros clientes un servicio respaldado por garantía. Para lo
                 <div class="row row-cols-1 row-cols-lg-5 row-cols-md-3 row-cols-sm-2 clients-style-06 justify-content-center ps-3 pe-3 xs-mt-40px" data-anime='{ "el": "childs", "scale": [0.8,1], "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'>
                     <!-- start client item -->
                     <div class="col client-box text-center md-mb-40px">
-                        <a href="#"><img src="https://www.mvdwash.com.uy/imagenesweb/logo_hard_rock01.png" alt=""></a>
+                        <a href="#"><img src="/assets/images/logo_hard_rock01.png" alt=""></a>
                     </div>
                     <!-- end client item -->
                     <!-- start client item -->
                     <div class="col client-box text-center md-mb-40px">
-                        <a href="#"><img src="https://www.mvdwash.com.uy/imagenesweb/sodre03.png" alt=""></a>
+                        <a href="#"><img src="/assets/images/sodre03.png" alt=""></a>
                     </div>
                     <!-- end client item -->
                     <!-- start client item -->
                     <div class="col client-box text-center md-mb-40px">
-                        <a href="#"><img src="https://www.mvdwash.com.uy/imagenesweb/innovar02.png" alt=""></a>
+                        <a href="#"><img src="/assets/images/innovar02.png" alt=""></a>
                     </div>
                     <!-- end client item -->
                     <!-- start client item -->
                     <div class="col client-box text-center sm-mb-40px">
-                        <a href="#"><img src="https://www.mvdwash.com.uy/imagenesweb/altius01.png" alt=""></a>
+                        <a href="#"><img src="/assets/images/altius01.png" alt=""></a>
                     </div> 
                     <!-- end client item -->
                     <!-- start client item -->
                     <div class="col client-box text-center">
-                        <a href="#"><img src="https://www.mvdwash.com.uy/imagenesweb/yuditec.png" alt=""></a>
+                        <a href="#"><img src="/assets/images/yuditec.png" alt=""></a>
                     </div> 
                     <!-- end client item -->
                 </div> 
             </div>
     </section>
         <!-- end section --> 
-        <!-- start section -->
-		<section class="position-relative bg-gradient-top-very-light-gray pt-0"> 
-            <div class="container">  
-              <div class="row g-0"> 
-                    <!-- start features box item -->
-                <div class="col-12" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <ul class="blog-grid blog-wrapper grid-loading grid grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                            <li class="grid-sizer"></li>
-                            <!-- start blog item -->
-                            <li class="grid-item">
-                                <div class="card border-0 border-radius-5px box-shadow-quadruple-large box-shadow-quadruple-large-hover">
-                                    <div class="blog-image">
-                                        <a href="limpieza_sillones.html" class="d-block"><img src="https://www.mvdwash.com.uy/imagenesweb/sillones02.png" alt="" /></a>
-                                        <div class="blog-categories">
-                                            <a href="demo-it-business-blog.html" class="categories-btn bg-white text-dark-gray text-dark-gray-hover text-uppercase fw-700">Hogar</a>
-                                        </div>
-                                    </div>
-                                    <div class="card-body p-13 md-p-11">
-                                        <a href="limpieza_sillones.html" class="card-title mb-15px fw-600 fs-18 lh-28 text-dark-gray d-inline-block w-90 md-w-100">Limpieza de Sillones y Sofás</a>
-                                        <p>Ofrecemos servicios de limpieza y sanitización para una amplia variedad de tipos de sillones...</p>
-                                        <div class="author d-flex justify-content-center align-items-center position-relative overflow-hidden fs-14 text-uppercase">
-                                            <div class="me-auto">
-                                                <span class="blog-date d-inline-block fw-600 text-dark-gray">2024</span>
-                                                <div class="d-inline-block author-name fw-600 text-dark-gray">por <a href="limpieza_sillones.html" class="text-dark-gray text-decoration-line-bottom">mvdwash</a></div>
-                                            </div>
-                                            <div class="like-count">
-                                                <a href="#"><i class="fa-regular fa-heart text-red"></i><span class="text-dark-gray align-middle fw-600">25</span></a>
-                                            </div>  
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <!-- end blog item -->
-                            <!-- start blog item -->
-                            <li class="grid-item">
-                                <div class="card border-0 border-radius-5px box-shadow-quadruple-large box-shadow-quadruple-large-hover">
-                                    <div class="blog-image">
-                                        <a href="demo-it-business-blog-single-clean.html" class="d-block"><img src="https://www.mvdwash.com.uy/imagenesweb/sillas_butacas.png" alt="" /></a>
-                                        <div class="blog-categories">
-                                            <a href="demo-it-business-blog.html" class="categories-btn bg-white text-dark-gray text-dark-gray-hover text-uppercase fw-700">Hogar</a>
-                                        </div>
-                                    </div>
-                                    <div class="card-body p-13 md-p-11">
-                                        <a href="demo-it-business-blog-single-clean.html" class="card-title mb-15px fw-600 fs-18 lh-28 text-dark-gray d-inline-block w-90 md-w-100">Limpieza Sillas y Butacas</a>
-                                        <p>Ofrecemos servicios de limpieza para sillas y butacas, tanto en entornos domésticos como...</p>
-                                        <div class="author d-flex justify-content-center align-items-center position-relative overflow-hidden fs-14 text-uppercase">
-                                            <div class="me-auto">
-                                                <span class="blog-date d-inline-block fw-600 text-dark-gray">2024</span>
-                                                <div class="d-inline-block author-name fw-600 text-dark-gray">por <a href="demo-it-business-blog.html" class="text-dark-gray text-decoration-line-bottom">mvdwash</a></div>
-                                            </div>
-                                            <div class="like-count">
-                                                <a href="#"><i class="fa-regular fa-heart text-red"></i><span class="text-dark-gray align-middle fw-600">58</span></a>
-                                            </div>  
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <!-- end blog item -->
-                            <!-- start blog item -->
-                            <li class="grid-item">
-                                <div class="card border-0 border-radius-5px box-shadow-quadruple-large box-shadow-quadruple-large-hover">
-                                    <div class="blog-image">
-                                        <a href="demo-it-business-blog-single-clean.html" class="d-block"><img src="https://www.mvdwash.com.uy/imagenesweb/alfombras.png" alt="" /></a>
-                                        <div class="blog-categories">
-                                            <a href="demo-it-business-blog.html" class="categories-btn bg-white text-dark-gray text-dark-gray-hover text-uppercase fw-700">Hogar</a>
-                                        </div>
-                                    </div>
-                                    <div class="card-body p-13 md-p-11">
-                                        <a href="demo-it-business-blog-single-clean.html" class="card-title mb-15px fw-600 fs-18 lh-28 text-dark-gray d-inline-block w-90 md-w-100">Alfombras y Moquettes</a>
-                                        <p>Es crucial mantener la limpieza de nuestras alfombras y moquettes, y para lograrlo ofrecemos...</p>
-                                        <div class="author d-flex justify-content-center align-items-center position-relative overflow-hidden fs-14 text-uppercase">
-                                            <div class="me-auto">
-                                                <span class="blog-date d-inline-block fw-600 text-dark-gray">2024</span>
-                                                <div class="d-inline-block author-name fw-600 text-dark-gray">por <a href="demo-it-business-blog.html" class="text-dark-gray text-decoration-line-bottom">mvdwash</a></div>
-                                            </div>
-                                            <div class="like-count">
-                                                <a href="#"><i class="fa-regular fa-heart text-red"></i><span class="text-dark-gray align-middle fw-600">75</span></a>
-                                            </div>  
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <!-- end blog item --> 
-                            <!-- start blog item -->
-                            <li class="grid-item">
-                                <div class="card border-0 border-radius-5px box-shadow-quadruple-large box-shadow-quadruple-large-hover">
-                                    <div class="blog-image">
-                                        <a href="demo-it-business-blog-single-clean.html" class="d-block"><img src="https://www.mvdwash.com.uy/imagenesweb/colchones.png" alt="" /></a>
-                                        <div class="blog-categories">
-                                            <a href="demo-it-business-blog.html" class="categories-btn bg-white text-dark-gray text-dark-gray-hover text-uppercase fw-700">Hogar</a>
-                                        </div>
-                                    </div>
-                                    <div class="card-body p-13 md-p-11">
-                                        <a href="demo-it-business-blog-single-clean.html" class="card-title mb-15px fw-600 fs-18 lh-28 text-dark-gray d-inline-block w-90 md-w-100">Sanitización de colchones</a>
-                                        <p>Nuestro servicio de limpieza y sanitización de colchones elimina todas las bacterias, ácaros...</p>
-                                        <div class="author d-flex justify-content-center align-items-center position-relative overflow-hidden fs-14 text-uppercase">
-                                            <div class="me-auto">
-                                                <span class="blog-date d-inline-block fw-600 text-dark-gray">2024</span>
-                                                <div class="d-inline-block author-name fw-600 text-dark-gray">por <a href="demo-it-business-blog.html" class="text-dark-gray text-decoration-line-bottom">mvdwash</a></div>
-                                            </div>
-                                            <div class="like-count">
-                                                <a href="#"><i class="fa-regular fa-heart text-red"></i><span class="text-dark-gray align-middle fw-600">22</span></a>
-                                            </div>  
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <!-- end blog item -->
-                            <!-- start blog item -->
-                            <li class="grid-item">
-                                <div class="card border-0 border-radius-5px box-shadow-quadruple-large box-shadow-quadruple-large-hover">
-                                    <div class="blog-image">
-                                        <a href="demo-it-business-blog-single-clean.html" class="d-block"><img src="https://www.mvdwash.com.uy/imagenesweb/tapizados.png" alt="" /></a>
-                                        <div class="blog-categories">
-                                            <a href="demo-it-business-blog.html" class="categories-btn bg-white text-dark-gray text-dark-gray-hover text-uppercase fw-700">Automotriz</a>
-                                        </div>
-                                    </div>
-                                    <div class="card-body p-13 md-p-11">
-                                        <a href="demo-it-business-blog-single-clean.html" class="card-title mb-15px fw-600 fs-18 lh-28 text-dark-gray d-inline-block w-90 md-w-100">Tapizados de Autos</a>
-                                        <p>Es vital mantener el interior de tu coche impecablemente limpio. Como conductor frecuente...</p>
-                                        <div class="author d-flex justify-content-center align-items-center position-relative overflow-hidden fs-14 text-uppercase">
-                                            <div class="me-auto">
-                                                <span class="blog-date d-inline-block fw-600 text-dark-gray">2024</span>
-                                                <div class="d-inline-block author-name fw-600 text-dark-gray">por <a href="demo-it-business-blog.html" class="text-dark-gray text-decoration-line-bottom">mvdwash</a></div>
-                                            </div>
-                                            <div class="like-count">
-                                                <a href="#"><i class="fa-regular fa-heart text-red"></i><span class="text-dark-gray align-middle fw-600">58</span></a>
-                                            </div>  
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <!-- end blog item -->
-                            <!-- start blog item -->
-                            <li class="grid-item">
-                                <div class="card border-0 border-radius-5px box-shadow-quadruple-large box-shadow-quadruple-large-hover">
-                                    <div class="blog-image">
-                                        <a href="demo-it-business-blog-single-clean.html" class="d-block"><img src="https://www.mvdwash.com.uy/imagenesweb/productos.png" alt="" /></a>
-                                        <div class="blog-categories">
-                                            <a href="demo-it-business-blog.html" class="categories-btn bg-white text-dark-gray text-dark-gray-hover text-uppercase fw-700">Productos</a>
-                                        </div>
-                                    </div>
-                                    <div class="card-body p-13 md-p-11">
-                                        <a href="demo-it-business-blog-single-clean.html" class="card-title mb-15px fw-600 fs-18 lh-28 text-dark-gray d-inline-block w-90 md-w-100">Productos Exclusivos</a>
-                                        <p>Disponemos de una línea exclusiva de diversos productos para la limpieza del hogar y automotriz...</p>
-                                        <div class="author d-flex justify-content-center align-items-center position-relative overflow-hidden fs-14 text-uppercase">
-                                            <div class="me-auto">
-                                                <span class="blog-date d-inline-block fw-600 text-dark-gray">2024</span>
-                                                <div class="d-inline-block author-name fw-600 text-dark-gray">por <a href="demo-it-business-blog.html" class="text-dark-gray text-decoration-line-bottom">mvdwash</a></div>
-                                            </div>
-                                            <div class="like-count">
-                                                <a href="#"><i class="fa-regular fa-heart text-red"></i><span class="text-dark-gray align-middle fw-600">46</span></a>
-                                            </div>  
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <!-- end blog item -->
-                        </ul>
-                </div>
-              </div>
-            </div>
-            <div class="shape-image-animation p-0 w-100 bottom-minus-40px xl-bottom-0px d-none d-md-block"> 
-                <svg xmlns="http://www.w3.org/2000/svg" widht="3000" height="400" viewBox="0 180 2500 200" fill="#ffffff"> 
-                <path class="st1" d="M 0 250 C 1200 400 1200 50 3000 250 L 3000 550 L 0 550 L 0 250">
-                <animate
-                    attributeName="d"
-                    dur="5s"
-                    values="M 0 250 C 1200 400 1200 50 3000 250 L 3000 550 L 0 550 L 0 250;
-                            M 0 250 C 400 50 400 400 3000 250 L 3000 550 L 0 550 L 0 250;
-                            M 0 250 C 1200 400 1200 50 3000 250 L 3000 550 L 0 550 L 0 250"
-                    repeatCount="indefinite"
-                    />
-                </path>
-                </svg>
-            </div>
-        </section>
-        <section class="cover-background one-third-screen sm-h-500px pb-0 position-relative" style="background-image:url('https://www.mvdwash.com.uy/imagenesweb/fondo_abajo.png');">
+
+        <!-- Otros Servicios -->
+        {% set serviciosTitulo = 'Nuestros Servicios de Limpieza' %}
+        {% include "servicios.njk" %}
+        <!-- /Termina Otros Servicios -->
+        
+        <section class="cover-background one-third-screen sm-h-500px pb-0 position-relative" style="background-image:url('/assets/images/fondo_abajo.png');">
             <div class="opacity-extra-medium bg-dark-gray"></div> 
             <div class="container h-100"> 
                 <div class="row align-items-center justify-content-center h-100">

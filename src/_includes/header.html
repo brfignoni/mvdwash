@@ -8,20 +8,20 @@
       <div class="col-auto col-xxl-3 col-lg-2 me-lg-0 me-auto">
         <a class="navbar-brand" href="demo-it-business.html">
           <img
-            src="https://www.mvdwash.com.uy/imagenesweb/logo-txt.png"
-            data-at2x="https://www.mvdwash.com.uy/imagenesweb/logo_mas_chico.png"
+            src="/assets/logo-txt.png"
+            data-at2x="/assets/logo_mas_chico.png"
             alt=""
             class="default-logo"
           />
           <img
-            src="https://www.mvdwash.com.uy/imagenesweb/logo-txt.png"
-            data-at2x="https://www.mvdwash.com.uy/imagenesweb/logo_mas_chico.png"
+            src="/assets/logo-txt.png"
+            data-at2x="/assets/logo_mas_chico.png"
             alt=""
             class="alt-logo"
           />
           <img
-            src="https://www.mvdwash.com.uy/imagenesweb/logo-txt.png"
-            data-at2x="https://www.mvdwash.com.uy/imagenesweb/logo_mas_chico.png"
+            src="/assets/logo-txt.png"
+            data-at2x="/assets/logo_mas_chico.png"
             alt=""
             class="mobile-logo"
           />
@@ -50,9 +50,7 @@
               <a href="demo-it-business.html" class="nav-link">Inicio</a>
             </li>
             <li class="nav-item">
-              <a href="demo-it-business-about.html" class="nav-link"
-                >Sobre Mvdwash</a
-              >
+              <a href="/sobre-mvd-wash" class="nav-link">Sobre Mvdwash</a>
             </li>
             <li class="nav-item dropdown dropdown-with-icon-style02">
               <a href="" class="nav-link">Servicios</a>
@@ -68,42 +66,37 @@
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <li>
-                  <a href="limpieza_sillones.html"
+                  <a href="/servicios/limpieza-sillones.html"
                     ><i class="bi bi-briefcase"></i>Limpieza de sillones</a
                   >
                 </li>
                 <li>
-                  <a href="demo-it-business-services-details.html"
+                  <a href="/servicios/limpieza-sillas-butacas.html"
                     ><i class="bi bi-clipboard-data"></i>Sillas y butacas</a
                   >
                 </li>
                 <li>
-                  <a href="demo-it-business-services-details.html"
+                  <a href="/servicios/limpieza-tapizado-autos.html"
                     ><i class="bi bi-peace"></i>Tapizados de autos</a
                   >
                 </li>
                 <li>
-                  <a href="demo-it-business-services-details.html"
+                  <a href="/servicios/limpieza-colchones"
                     ><i class="bi bi-bar-chart-line"></i>Limpieza de
                     colchones</a
                   >
                 </li>
                 <li>
-                  <a href="demo-it-business-services-details.html"
+                  <a href="/servicios/limpieza-alfombras-moquettes.html"
                     ><i class="bi bi-send-check"></i>Alfombras y Moquettes</a
                   >
                 </li>
                 <li>
-                  <a href="demo-it-business-services-details.html"
+                  <a href="/servicios/productos-exclusivos.html"
                     ><i class="bi bi-globe2"></i>Productos Exclusivos</a
                   >
                 </li>
               </ul>
-            </li>
-            <li class="nav-item">
-              <a href="demo-it-business-case-studies.html" class="nav-link"
-                >Trabajos</a
-              >
             </li>
             <li class="nav-item">
               <a href="demo-it-business-contact.html" class="nav-link"
@@ -114,10 +107,12 @@
         </div>
       </div>
       <div class="col-auto col-xxl-3 col-lg-2 text-end d-none d-sm-flex">
-        <div class="header-icon">
+        <div
+          class="header-icon {{ 'd-none' if ocultarBotonPresupuesto == true}}"
+        >
           <div class="header-button">
             <a
-              href="#form-solicitar-presupuesto"
+              href="demo-it-business-contact.html"
               class="btn btn-large btn-transparent-white-light btn-rounded text-transform-none border-1"
               >Solicitar Presupuesto<i class="fa-solid fa-arrow-down"></i
             ></a>

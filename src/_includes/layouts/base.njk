@@ -15,7 +15,7 @@
     <title>{{title}}</title>
     {% include "head.html" %}
   </head>
-  <body data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="#252840">  
+  <body data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="#252840" class={{bodyClass}}>  
     <div class="page-layout">
       {% include "header.html" %}
       {{content | safe}}

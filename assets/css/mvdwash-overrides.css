@@ -1,0 +1,34 @@
+/*Menu / Header*/
+header .navbar-brand img {
+  max-height: 52px;
+}
+.d-none {
+  display: none;
+}
+.height-100 {
+  height: 100%;
+}
+.whatsapp--fixed {
+  position: fixed;
+  right: 36px;
+  bottom: 36px;
+}
+.whatsapp--fixed i {
+  font-size: 42px;
+}
+.whatsapp--fixed i:before {
+  color: #128c7e;
+}
+.whatsapp--fixed:hover i:before {
+  color: #25d366;
+}
+
+/*home*/
+.intro--home {
+  height: 800px;
+}
+
+/*contacto*/
+.intro--contacto {
+  height: 500px;
+}
