@@ -1,0 +1,56 @@
+---
+layout: base.njk
+title: Limpieza de Colchones
+---
+
+<!-- Banner -->
+{% set titulo = 'Colchones' %}
+{% set backgroundUrl = '/assets/images/cabezales/cabezal_colchones.png' %}
+{% include "servicios/banner.njk" %}
+<!-- /End Banner -->
+
+<!-- Intro -->
+{% set titulo = 'Limpieza y Esterilización de tus colchones' %}
+{% set descripcion = '
+  ONuestro servicio de limpieza y sanitización de colchones elimina todas las bacterias, ácaros, y otros microorganismos que habitan en ellos. Esto no solo promueve un descanso más saludable, sino que también ayuda a prevenir futuras gripes y alergias, garantizando un ambiente más higiénico y confortable.
+' %}
+{% include "servicios/intro.njk" %}
+<!-- /End Intro -->
+
+<!-- Bloque 1 (Nuestra dedicación en cada trabajo) -->
+{% set tag = 'HOGAR Y EMPRESAS' %}
+{% set imagen = 'video_colchones.png' %}
+{% set titulo = 'Nuestra dedicación en cada trabajo' %}
+{% include "servicios/bloque-1.njk" %}
+<!-- /Termina Bloque 1 -->
+
+<!-- Bloque 2 (Pensamos diferente, creemos que...) -->
+{% include "servicios/bloque-2.njk" %}
+<!-- /Termina Bloque 2 -->
+
+<section>
+  <div class="container">
+    <!-- Bloque 3 (Elegí calidad de trabajo...)-->
+    {% set imagenBloque3 = 'video_colchones.png' %}
+    {% include "servicios/bloque-3.njk" %}
+    {% include "servicios/logos.njk" %} 
+    {% include "servicios/faq.njk" %} 
+    {% include "servicios/obten-presupuesto.njk" %} 
+  </div>
+</section>
+<!-- /Termina Bloque 3 -->
+
+<!-- Otros Servicios -->
+{% set serviciosTitulo = 'Otros servicios que te pueden interesar' %}
+{% set esteServicio = 'colchones' %}
+{% include "servicios.njk" %}
+<!-- /Termina Otros Servicios -->
+
+<!-- Form -->
+{% set formServicioAsunto = 'Presupuesto limpieza de sillones' %}
+{% set formServicio = 'limpieza-sillones' %}
+{% include "servicios/form.njk" %}
+<!-- /End Banner -->
+
+
+  

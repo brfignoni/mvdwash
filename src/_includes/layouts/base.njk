@@ -5,22 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="{{description}}"
+      content="En Montevideo Wash nos dedicamos al servicio de Limpieza de Artículos de Hogar y Automotriz"
     />
     <meta
         name="keywords"
-      content="{{keywords}}"
+      content="Servicio profesional de limpieza, Limpieza de Hogar y Automotriz, Sanitización a vaporm, Limpieza de calidad, Limpieza de sillones, Limpieza de sillas, Limpieza de Sofás, Limpieza de colchones, Limpieza Moquettes y Alfombras, Limpieza de tapizados de auto"
     />
     <meta name="author" content="MvdWash">
-    <title>{{title}}</title>
+    <title>{{title}} | MvdWash</title>
     {% include "head.html" %}
   </head>
   <body data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="#252840" class={{bodyClass}}>  
-    <div class="page-layout">
-      {% include "header.html" %}
-      {{content | safe}}
-      {% include "footer.html" %}
-      {% include "footer-after.html" %}
-    </div>
+    {% include "header.html" %}
+    {{content | safe}}
+    {% include "footer.html" %}
+    {% include "footer-after.html" %}
   </body>
 </html>

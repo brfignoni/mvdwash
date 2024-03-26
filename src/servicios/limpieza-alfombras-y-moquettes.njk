@@ -1,0 +1,57 @@
+---
+layout: base.njk
+title: Limpieza de Alfombras y Moquettes
+---
+
+<!-- Banner -->
+{% set titulo = 'Alfombras y Moquettes' %}
+{% set backgroundUrl = '/assets/images/cabezales/cabezal_alfombras.png' %}
+{% include "servicios/banner.njk" %}
+<!-- /End Banner -->
+
+<!-- Intro -->
+{% set titulo = 'Limpieza profunda para tus alfombras y Moquettes' %}
+{% set descripcion = '
+Es crucial mantener la limpieza de nuestras alfombras y moquettes, y para lograrlo ofrecemos un servicio especializado realizado con equipos profesionales de última generación. Cubrimos una amplia gama de espacios en metros cuadrados, tanto para hogares como para grandes superficies comerciales.
+
+' %}
+{% include "servicios/intro.njk" %}
+<!-- /End Intro -->
+
+<!-- Bloque 1 (Nuestra dedicación en cada trabajo) -->
+{% set tag = 'HOGAR Y EMPRESAS' %}
+{% set imagen = 'video_alfombras.png' %}
+{% set titulo = 'Nuestra dedicación en cada trabajo' %}
+{% include "servicios/bloque-1.njk" %}
+<!-- /Termina Bloque 1 -->
+
+<!-- Bloque 2 (Pensamos diferente, creemos que...) -->
+{% include "servicios/bloque-2.njk" %}
+<!-- /Termina Bloque 2 -->
+
+<section>
+  <div class="container">
+    <!-- Bloque 3 (Elegí calidad de trabajo...)-->
+    {% set imagenBloque3 = 'video_alfombras.png' %}
+    {% include "servicios/bloque-3.njk" %}
+    {% include "servicios/logos.njk" %} 
+    {% include "servicios/faq.njk" %} 
+    {% include "servicios/obten-presupuesto.njk" %} 
+  </div>
+</section>
+<!-- /Termina Bloque 3 -->
+
+<!-- Otros Servicios -->
+{% set serviciosTitulo = 'Otros servicios que te pueden interesar' %}
+{% set esteServicio = 'alfombras-moquettes' %}
+{% include "servicios.njk" %}
+<!-- /Termina Otros Servicios -->
+
+<!-- Form -->
+{% set formServicioAsunto = 'Presupuesto limpieza de sillones' %}
+{% set formServicio = 'limpieza-sillones' %}
+{% include "servicios/form.njk" %}
+<!-- /End Banner -->
+
+
+  

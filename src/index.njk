@@ -1,172 +1,158 @@
 ---
 layout: base.njk
-title: Homepage
-keywords: limpieza, alfombras, moquettes, sillones, sofas, vapor, limpieza a vapor, sanitizacion, limpieza profunda 
-description: En Montevideo Wash nos dedicamos al servicio de Limpieza de Artículos de Hogar y Automotriz
 ocultarBotonPresupuesto: true
+title: Home
 ---
 <!-- start hero section -->
-
 {% set introId = 'home' %}
 {% set introTitulo = 'Servicio de Limpieza de Hogar Y Automotriz' %}
 {% set introDescripcion = 'Nos destacamos en la limpieza y sanitización de hogares y vehículos. Ofrecemos una amplia gama de servicios para satisfacer las necesidades individuales de cada cliente, y enfrentamos cada tarea con un compromiso y responsabilidad excepcionales.' %}
 {% set ocultarIntroDescripcion = false %}
 {% set ocultarIntroBotones = false %}
 {% include "intro.njk" %}
-
-        <!-- start section -->
-    <section class="pt-3 sm-pt-50px pb-3">
-            <div class="container">
-                <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center mb-7" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <!-- start features box item -->
-                    <div class="col icon-with-text-style-01 md-mb-30px">
-                        <div class="feature-box feature-box-left-icon last-paragraph-no-margin">
-                            <div class="feature-box-icon me-20px">
-                                <img src="/assets/images/tuerca.png" alt=""/>
-                            </div>
-                            <div class="feature-box-content">
-                                <span class="d-inline-block fs-18 text-dark-gray fw-700 mb-5px">Maquinaria profesional</span>
-                                <p class="w-80 xl-w-90 lg-w-100">Disponemos de equipos de última tecnología con la potencia necesaria para afrontar cualquier desafío. Nuestra gama incluye máquinas de inyección y extracción, equipos profesionales de vapor, aspiradoras de alta potencia, secadoras de calor, entre otros recursos avanzados.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end features box item -->
-                    <!-- start features box item -->
-                    <div class="col icon-with-text-style-01 md-mb-30px">
-                        <div class="feature-box feature-box-left-icon last-paragraph-no-margin">
-                            <div class="feature-box-icon me-20px">
-                                <img src="/assets/images/personal.png" alt=""/>
-                            </div>
-                            <div class="feature-box-content">
-                                <span class="d-inline-block fs-18 text-dark-gray fw-700 mb-5px">Personal capacitado</span>
-                                <p class="w-80 xl-w-90 lg-w-100">Nuestro equipo está completamente capacitado para ofrecer un servicio de alta calidad. Nos aseguramos de actuar con los cuidados necesarios en cada entorno que limpiamos, gestionando todo con la responsabilidad que ello implica.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end features box item -->
-                    <!-- start features box item -->
-                    <div class="col icon-with-text-style-01 md-mb-30px">
-                        <div class="feature-box feature-box-left-icon last-paragraph-no-margin">
-                            <div class="feature-box-icon me-20px">
-                                <img src="/assets/images/estrellas.png" alt=""/>
-                            </div>
-                            <div class="feature-box-content">
-                                <span class="d-inline-block fs-18 text-dark-gray fw-700 mb-5px">Trabajos con Garantía</span>
-                                <p class="w-80 xl-w-90 lg-w-100">
-Proporcionamos a nuestros clientes un servicio respaldado por garantía. Para lograrlo, llevamos a cabo una exhaustiva evaluación mediante preguntas detalladas que nos permiten analizar cada caso de manera individualizada, asegurando así la entrega de un servicio de primera calidad.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end features box item --> 
-                </div>
-                <div class="row mb-10 align-items-center">
-                    <div class="col-lg-5 position-relative md-mb-20">
-                        <div class="w-70 xs-w-80" data-animation-delay="50" data-shadow-animation="true">
-                            <img src="/assets/images/640_nueva.png" alt="" class="border-radius-8px w-100">
-                        </div>
-                        <div class="w-60 overflow-hidden position-absolute right-minus-15px xs-right-15px xs-w-60 bottom-minus-50px" data-shadow-animation="true" data-animation-delay="250" data-bottom-top="transform: translateY(50px)" data-top-bottom="transform: translateY(-50px)">
-                            <img src="/assets/images/empresa.png" alt="" class="border-radius-8px w-100 box-shadow-quadruple-large" />
-                        </div>
-                    </div>
-                    <div class="col-xl-5 col-lg-6 offset-lg-1" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <span class="ps-25px pe-25px mb-20px text-uppercase text-base-color fs-12 lh-40 fw-700 border-radius-100px bg-gradient-very-light-gray-transparent d-inline-flex"><i class="bi bi-award fs-16 me-5px"></i>Servicio empresarial</span>
-                        <h3 class="text-dark-gray fs-50 fw-700 ls-minus-2px">Algunos de Nuestros Clientes.</h3>
-                        <p class="mb-40px sm-mb-25px">Con el transcurso de los años, hemos acumulado una valiosa experiencia que nos ha permitido ganar la confianza de nuestros clientes en lo que respecta al mantenimiento y sanitización de sus locales y oficinas comerciales. Abordamos cada proyecto con la seriedad y responsabilidad que merece, asegurando la ejecución de cada tarea con la más alta calidad posible.</p>
-                        <div class="progress-bar-style-02">
-                            <!-- start progress bar item -->
-                            <div class="progress mb-15px border-radius-50px fw-700 fs-11 lh-11 text-white bg-white">
-                                <div class="progress-bar bg-gradient-flamingo-red-transparent m-0" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100" aria-label="business">
-                                    <span class="progress-bar-percent text-flamingo">99%</span>
-                                </div>
-                                <div class="progress-bar-title text-uppercase">Clientes satisfechos</div>
-                            </div>
-                            <!-- end progress bar item -->
-                            <!-- start progress bar item -->
-                            <div class="progress border-radius-50px fw-700 fs-11 lh-11 text-white bg-white">
-                                <div class="progress-bar bg-gradient-base-color-transparent m-0" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="technology">
-                                    <span class="progress-bar-percent text-base-color">85%</span>
-                                </div>
-                                <div class="progress-bar-title text-uppercase">Tecnología de avanzada</div>
-                            </div>
-                            <!-- end progress bar item -->
-                        </div>
-                    </div>
-                </div>
-                <div class="row row-cols-1 row-cols-lg-5 row-cols-md-3 row-cols-sm-2 clients-style-06 justify-content-center ps-3 pe-3 xs-mt-40px" data-anime='{ "el": "childs", "scale": [0.8,1], "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <!-- start client item -->
-                    <div class="col client-box text-center md-mb-40px">
-                        <a href="#"><img src="/assets/images/logo_hard_rock01.png" alt=""></a>
-                    </div>
-                    <!-- end client item -->
-                    <!-- start client item -->
-                    <div class="col client-box text-center md-mb-40px">
-                        <a href="#"><img src="/assets/images/sodre03.png" alt=""></a>
-                    </div>
-                    <!-- end client item -->
-                    <!-- start client item -->
-                    <div class="col client-box text-center md-mb-40px">
-                        <a href="#"><img src="/assets/images/innovar02.png" alt=""></a>
-                    </div>
-                    <!-- end client item -->
-                    <!-- start client item -->
-                    <div class="col client-box text-center sm-mb-40px">
-                        <a href="#"><img src="/assets/images/altius01.png" alt=""></a>
-                    </div> 
-                    <!-- end client item -->
-                    <!-- start client item -->
-                    <div class="col client-box text-center">
-                        <a href="#"><img src="/assets/images/yuditec.png" alt=""></a>
-                    </div> 
-                    <!-- end client item -->
-                </div> 
+<!-- start section -->
+<section class="pt-3 sm-pt-50px pb-3">
+   <div class="container">
+      <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center mb-7" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+         <!-- start features box item -->
+         <div class="col icon-with-text-style-01 md-mb-30px">
+            <div class="feature-box feature-box-left-icon last-paragraph-no-margin">
+               <div class="feature-box-icon me-20px">
+                  <img src="/assets/images/tuerca.png" alt=""/>
+               </div>
+               <div class="feature-box-content">
+                  <span class="d-inline-block fs-18 text-dark-gray fw-700 mb-5px">Maquinaria profesional</span>
+                  <p class="w-80 xl-w-90 lg-w-100">Disponemos de equipos de última tecnología con la potencia necesaria para afrontar cualquier desafío. Nuestra gama incluye máquinas de inyección y extracción, equipos profesionales de vapor, aspiradoras de alta potencia, secadoras de calor, entre otros recursos avanzados.</p>
+               </div>
             </div>
-    </section>
-        <!-- end section --> 
-
-        <!-- Otros Servicios -->
-        {% set serviciosTitulo = 'Nuestros Servicios de Limpieza' %}
-        {% include "servicios.njk" %}
-        <!-- /Termina Otros Servicios -->
-        
-        <section class="cover-background one-third-screen sm-h-500px pb-0 position-relative" style="background-image:url('/assets/images/fondo_abajo.png');">
-            <div class="opacity-extra-medium bg-dark-gray"></div> 
-            <div class="container h-100"> 
-                <div class="row align-items-center justify-content-center h-100">
-                    <div class="col-xl-8 col-lg-10 mb-9 md-mb-15 position-relative z-index-1 text-center d-flex flex-wrap align-items-center justify-content-center" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>   
-                        <span class="ps-25px pe-25px pt-5px pb-5px mb-25px text-uppercase text-white fs-12 ls-1px fw-600 border-radius-100px bg-gradient-dark-gray-transparent d-inline-flex align-items-center text-start sm-lh-20"><i class="bi bi-megaphone text-white d-inline-block align-middle icon-small me-10px"></i> Te asesoramos en todo el proceso de compra...</span>
-                        <h1 class="text-white fw-600 ls-minus-2px mb-50px">Obtén los mejores resultados con nuestro servicio</h1> 
-                        <a href="#" class="btn btn-extra-large btn-switch-text btn-gradient-purple-pink btn-rounded me-10px">
-                            <span>
-                                <span class="btn-double-text" data-text="Obtén tu presupuesto">Obtén tu presupuesto</span>
-                                <span><i class="fa-solid fa-arrow-right"></i></span>
-                            </span>
-                        </a> 
-                    </div>  
-                </div> 
+         </div>
+         <!-- end features box item -->
+         <!-- start features box item -->
+         <div class="col icon-with-text-style-01 md-mb-30px">
+            <div class="feature-box feature-box-left-icon last-paragraph-no-margin">
+               <div class="feature-box-icon me-20px">
+                  <img src="/assets/images/personal.png" alt=""/>
+               </div>
+               <div class="feature-box-content">
+                  <span class="d-inline-block fs-18 text-dark-gray fw-700 mb-5px">Personal capacitado</span>
+                  <p class="w-80 xl-w-90 lg-w-100">Nuestro equipo está completamente capacitado para ofrecer un servicio de alta calidad. Nos aseguramos de actuar con los cuidados necesarios en cada entorno que limpiamos, gestionando todo con la responsabilidad que ello implica.</p>
+               </div>
             </div>
-            <div class="shape-image-animation p-0 w-100 bottom-minus-40px xl-bottom-0px d-none d-md-block"> 
-                <svg xmlns="http://www.w3.org/2000/svg" widht="3000" height="400" viewBox="0 180 2500 200" fill="#ffffff"> 
-                <path class="st1" d="M 0 250 C 1200 400 1200 50 3000 250 L 3000 550 L 0 550 L 0 250">
-                <animate
-                    attributeName="d"
-                    dur="5s"
-                    values="M 0 250 C 1200 400 1200 50 3000 250 L 3000 550 L 0 550 L 0 250;
-                            M 0 250 C 400 50 400 400 3000 250 L 3000 550 L 0 550 L 0 250;
-                            M 0 250 C 1200 400 1200 50 3000 250 L 3000 550 L 0 550 L 0 250"
-                    repeatCount="indefinite"
-                    />
-                </path>
-                </svg>
+         </div>
+         <!-- end features box item -->
+         <!-- start features box item -->
+         <div class="col icon-with-text-style-01 md-mb-30px">
+            <div class="feature-box feature-box-left-icon last-paragraph-no-margin">
+               <div class="feature-box-icon me-20px">
+                  <img src="/assets/images/estrellas.png" alt=""/>
+               </div>
+               <div class="feature-box-content">
+                  <span class="d-inline-block fs-18 text-dark-gray fw-700 mb-5px">Trabajos con Garantía</span>
+                  <p class="w-80 xl-w-90 lg-w-100">
+                     Proporcionamos a nuestros clientes un servicio respaldado por garantía. Para lograrlo, llevamos a cabo una exhaustiva evaluación mediante preguntas detalladas que nos permiten analizar cada caso de manera individualizada, asegurando así la entrega de un servicio de primera calidad.
+                  </p>
+               </div>
             </div>
-        </section>
-        <!-- end section -->
-        <!-- start subscription popup -->
-      
-                          
-                            <button title="Close (Esc)" type="button" class="mfp-close text-dark-gray"></button>
-                        </div>
-                    </div>
-                </div>
+         </div>
+         <!-- end features box item --> 
+      </div>
+      <div class="row mb-10 align-items-center">
+         <div class="col-lg-5 position-relative md-mb-20">
+            <div class="w-70 xs-w-80" data-animation-delay="50" data-shadow-animation="true">
+               <img src="/assets/images/640_nueva.png" alt="" class="border-radius-8px w-100">
             </div>
-        </div>
-        <!-- end subscription popup -->
+            <div class="w-60 overflow-hidden position-absolute right-minus-15px xs-right-15px xs-w-60 bottom-minus-50px" data-shadow-animation="true" data-animation-delay="250" data-bottom-top="transform: translateY(50px)" data-top-bottom="transform: translateY(-50px)">
+               <img src="/assets/images/empresa.png" alt="" class="border-radius-8px w-100 box-shadow-quadruple-large" />
+            </div>
+         </div>
+         <div id="nuestros-clientes" class="col-xl-5 col-lg-6 offset-lg-1" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+            <span class="ps-25px pe-25px mb-20px text-uppercase text-base-color fs-12 lh-40 fw-700 border-radius-100px bg-gradient-very-light-gray-transparent d-inline-flex"><i class="bi bi-award fs-16 me-5px"></i>Servicio empresarial</span>
+            <h3 class="text-dark-gray fs-50 fw-700 ls-minus-2px">Algunos de Nuestros Clientes.</h3>
+            <p class="mb-40px sm-mb-25px">Con el transcurso de los años, hemos acumulado una valiosa experiencia que nos ha permitido ganar la confianza de nuestros clientes en lo que respecta al mantenimiento y sanitización de sus locales y oficinas comerciales. Abordamos cada proyecto con la seriedad y responsabilidad que merece, asegurando la ejecución de cada tarea con la más alta calidad posible.</p>
+            <div class="progress-bar-style-02">
+               <!-- start progress bar item -->
+               <div class="progress mb-15px border-radius-50px fw-700 fs-11 lh-11 text-white bg-white">
+                  <div class="progress-bar bg-gradient-flamingo-red-transparent m-0" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100" aria-label="business">
+                     <span class="progress-bar-percent text-flamingo">99%</span>
+                  </div>
+                  <div class="progress-bar-title text-uppercase">Clientes satisfechos</div>
+               </div>
+               <!-- end progress bar item -->
+               <!-- start progress bar item -->
+               <div class="progress border-radius-50px fw-700 fs-11 lh-11 text-white bg-white">
+                  <div class="progress-bar bg-gradient-base-color-transparent m-0" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="technology">
+                     <span class="progress-bar-percent text-base-color">85%</span>
+                  </div>
+                  <div class="progress-bar-title text-uppercase">Tecnología de avanzada</div>
+               </div>
+               <!-- end progress bar item -->
+            </div>
+         </div>
+      </div>
+      <div class="row row-cols-1 row-cols-lg-5 row-cols-md-3 row-cols-sm-2 clients-style-06 justify-content-center ps-3 pe-3 xs-mt-40px" data-anime='{ "el": "childs", "scale": [0.8,1], "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+         <!-- start client item -->
+         <div class="col client-box text-center md-mb-40px">
+            <img src="/assets/images/logo_hard_rock01.png" alt="">
+         </div>
+         <!-- end client item -->
+         <!-- start client item -->
+         <div class="col client-box text-center md-mb-40px">
+            <img src="/assets/images/sodre03.png" alt="">
+         </div>
+         <!-- end client item -->
+         <!-- start client item -->
+         <div class="col client-box text-center md-mb-40px">
+            <img src="/assets/images/innovar02.png" alt="">
+         </div>
+         <!-- end client item -->
+         <!-- start client item -->
+         <div class="col client-box text-center sm-mb-40px">
+            <img src="/assets/images/altius01.png" alt="">
+         </div>
+         <!-- end client item -->
+         <!-- start client item -->
+         <div class="col client-box text-center">
+            <img src="/assets/images/yuditec.png" alt="">
+         </div>
+         <!-- end client item -->
+      </div>
+   </div>
+</section>
+<!-- end section --> 
+<!-- Otros Servicios -->
+{% set serviciosTitulo = 'Nuestros Servicios de Limpieza' %}
+{% include "servicios.njk" %}
+<!-- /Termina Otros Servicios -->
+<section class="cover-background one-third-screen sm-h-600px pb-0 position-relative" style="background-image:url('/assets/images/fondo_abajo.png');">
+   <div class="opacity-extra-medium bg-dark-gray"></div>
+   <div class="container h-100">
+      <div class="row align-items-center justify-content-center h-100">
+         <div class="col-xl-8 col-lg-10 mb-9 md-mb-15 position-relative z-index-1 text-center d-flex flex-wrap align-items-center justify-content-center" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+            <span class="ps-25px pe-25px pt-5px pb-5px mb-25px text-uppercase text-white fs-12 ls-1px fw-600 border-radius-100px bg-gradient-dark-gray-transparent d-inline-flex align-items-center text-start sm-lh-20"><i class="bi bi-megaphone text-white d-inline-block align-middle icon-small me-10px"></i> Te asesoramos en todo el proceso de compra...</span>
+            <h1 class="text-white fw-600 ls-minus-2px mb-50px">Obtén los mejores resultados con nuestro servicio</h1>
+            <a href="/contacto/" class="btn btn-extra-large btn-switch-text btn-gradient-purple-pink btn-rounded me-10px">
+            <span>
+            <span class="btn-double-text" data-text="Obtén tu presupuesto">Obtén tu presupuesto</span>
+            <span><i class="fa-solid fa-arrow-right"></i></span>
+            </span>
+            </a> 
+         </div>
+      </div>
+   </div>
+   <div class="shape-image-animation p-0 w-100 bottom-minus-40px xl-bottom-0px d-none d-md-block">
+      <svg xmlns="http://www.w3.org/2000/svg" widht="3000" height="400" viewBox="0 180 2500 200" fill="#ffffff">
+         <path class="st1" d="M 0 250 C 1200 400 1200 50 3000 250 L 3000 550 L 0 550 L 0 250">
+            <animate
+               attributeName="d"
+               dur="5s"
+               values="M 0 250 C 1200 400 1200 50 3000 250 L 3000 550 L 0 550 L 0 250;
+               M 0 250 C 400 50 400 400 3000 250 L 3000 550 L 0 550 L 0 250;
+               M 0 250 C 1200 400 1200 50 3000 250 L 3000 550 L 0 550 L 0 250"
+               repeatCount="indefinite"
+               />
+         </path>
+      </svg>
+   </div>
+</section>
+<!-- end section -->
+<!-- start subscription popup -->

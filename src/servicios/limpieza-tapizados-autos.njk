@@ -1,0 +1,56 @@
+---
+layout: base.njk
+title: Limpieza de Tapizados de Autos
+---
+
+<!-- Banner -->
+{% set titulo = 'Tapizados de Autos' %}
+{% set backgroundUrl = '/assets/images/cabezales/cabezal_tapizados_autos.png' %}
+{% include "servicios/banner.njk" %}
+<!-- /End Banner -->
+
+<!-- Intro -->
+{% set titulo = 'Limpieza y sanitización de tus tapizados' %}
+{% set descripcion = '
+  Es vital mantener el interior de tu coche impecablemente limpio. Como conductor frecuente, es probable que el interior de tu vehículo, especialmente los asientos, se ensucie con regularidad. Por ello, es esencial reconocer la importancia de limpiar la tapicería de tu automóvil de forma regular para garantizar un ambiente confortable y saludable.
+' %}
+{% include "servicios/intro.njk" %}
+<!-- /End Intro -->
+
+<!-- Bloque 1 (Nuestra dedicación en cada trabajo) -->
+{% set tag = 'HOGAR Y EMPRESAS' %}
+{% set imagen = 'video_tapizados.png' %}
+{% set titulo = 'Nuestra dedicación en cada trabajo' %}
+{% include "servicios/bloque-1.njk" %}
+<!-- /Termina Bloque 1 -->
+
+<!-- Bloque 2 (Pensamos diferente, creemos que...) -->
+{% include "servicios/bloque-2.njk" %}
+<!-- /Termina Bloque 2 -->
+
+<section>
+  <div class="container">
+    <!-- Bloque 3 (Elegí calidad de trabajo...)-->
+    {% set imagenBloque3 = 'video_tapizados.png' %}
+    {% include "servicios/bloque-3.njk" %}
+    {% include "servicios/logos.njk" %} 
+    {% include "servicios/faq.njk" %} 
+    {% include "servicios/obten-presupuesto.njk" %} 
+  </div>
+</section>
+<!-- /Termina Bloque 3 -->
+
+<!-- Otros Servicios -->
+{% set serviciosTitulo = 'Otros servicios que te pueden interesar' %}
+{% set esteServicio = 'tapizados-autos' %}
+{% include "servicios.njk" %}
+<!-- /Termina Otros Servicios -->
+
+<!-- Form -->
+{% set formServicioAsunto = 'Presupuesto limpieza de sillones' %}
+{% set formServicio = 'limpieza-sillones' %}
+{% include "servicios/form.njk" %}
+<!-- /End Banner -->
+
+
+  

@@ -1,0 +1,56 @@
+---
+layout: base.njk
+title: Limpieza de Sillas y Butacas
+---
+
+<!-- Banner -->
+{% set titulo = 'Sillas y Butacas' %}
+{% set backgroundUrl = '/assets/images/cabezales/cabezal_sillas.png' %}
+{% include "servicios/banner.njk" %}
+<!-- /End Banner -->
+
+<!-- Intro -->
+{% set titulo = 'Una limpieza profunda para tus sillas' %}
+{% set descripcion = '
+  Ofrecemos servicios de limpieza para sillas y butacas, tanto en entornos domésticos como empresariales. Nos especializamos en el mantenimiento de establecimientos comerciales como restaurantes, cines, teatros, salas de conferencias, entre otros.
+' %}
+{% include "servicios/intro.njk" %}
+<!-- /End Intro -->
+
+<!-- Bloque 1 (Nuestra dedicación en cada trabajo) -->
+{% set tag = 'HOGAR Y EMPRESAS' %}
+{% set imagen = 'video_sillas.png' %}
+{% set titulo = 'Nuestra dedicación en cada trabajo' %}
+{% include "servicios/bloque-1.njk" %}
+<!-- /Termina Bloque 1 -->
+
+<!-- Bloque 2 (Pensamos diferente, creemos que...) -->
+{% include "servicios/bloque-2.njk" %}
+<!-- /Termina Bloque 2 -->
+
+<section>
+  <div class="container">
+    <!-- Bloque 3 (Elegí calidad de trabajo...)-->
+    {% set imagenBloque3 = 'video_sillas.png' %}
+    {% include "servicios/bloque-3.njk" %}
+    {% include "servicios/logos.njk" %} 
+    {% include "servicios/faq.njk" %} 
+    {% include "servicios/obten-presupuesto.njk" %} 
+  </div>
+</section>
+<!-- /Termina Bloque 3 -->
+
+<!-- Otros Servicios -->
+{% set serviciosTitulo = 'Otros servicios que te pueden interesar' %}
+{% set esteServicio = 'sillas-butacas' %}
+{% include "servicios.njk" %}
+<!-- /Termina Otros Servicios -->
+
+<!-- Form -->
+{% set formServicioAsunto = 'Presupuesto limpieza de sillones' %}
+{% set formServicio = 'limpieza-sillones' %}
+{% include "servicios/form.njk" %}
+<!-- /End Banner -->
+
+
+  

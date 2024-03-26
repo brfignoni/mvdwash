@@ -1,27 +1,25 @@
 ---
 layout: base.njk
 title: Limpieza de Sillones
-keywords: limpieza, sillones, vapor, limpieza a vapor, sanitizacion, limpieza profunda 
-description: En Montevideo Wash también nos dedicamos al servicio de Limpieza de Sillones
 ---
 
 <!-- Banner -->
-{% set tag = 'VIVE LA EXPERIENCIA' %}
 {% set titulo = 'Sillones y Sofás' %}
-{% set backgroundUrl = '/assets/banner_sillones.png' %}
+{% set backgroundUrl = '/assets/images/cabezales/cabezal_sillones.png' %}
 {% include "servicios/banner.njk" %}
 <!-- /End Banner -->
 
 <!-- Intro -->
-{% set titulo = 'Sillones y Sofás' %}
+{% set titulo = 'Una Limpieza Profunda para tu sillón' %}
 {% set descripcion = '
-  <p>description</p>
+  Ofrecemos servicios de limpieza y sanitización para una amplia variedad de tipos de sillones, incluyendo modelos de un cuerpo, dos cuerpos, tres cuerpos, long chaise, entre otros, fabricados en diferentes materiales como tela, Aqua clean, cuero, eco cuero, pana, lana, entre otros. Nuestro proceso de limpieza garantiza que tus sillones queden completamente libres de millones de bacterias que pueden habitar en ellos.
 ' %}
 {% include "servicios/intro.njk" %}
 <!-- /End Intro -->
 
 <!-- Bloque 1 (Nuestra dedicación en cada trabajo) -->
 {% set tag = 'HOGAR Y EMPRESAS' %}
+{% set imagen = 'video_sillones.png' %}
 {% set titulo = 'Nuestra dedicación en cada trabajo' %}
 {% include "servicios/bloque-1.njk" %}
 <!-- /Termina Bloque 1 -->
@@ -33,6 +31,7 @@ description: En Montevideo Wash también nos dedicamos al servicio de Limpieza d
 <section>
   <div class="container">
     <!-- Bloque 3 (Elegí calidad de trabajo...)-->
+    {% set imagenBloque3 = 'video_sillones.png' %}
     {% include "servicios/bloque-3.njk" %}
     {% include "servicios/logos.njk" %} 
     {% include "servicios/faq.njk" %} 

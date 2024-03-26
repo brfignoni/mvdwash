@@ -1,37 +1,16 @@
 GENERAL
-
-- boton whatsapp ✅
 - meter meta tags + SEO (falta que me pase los datos alvaro) ⌛
-- se va dribble y twitter y agregamos youtube ✅
-- subscribite a newsletter se va ✅
-- agrandar un poco el logo y pasarlo a svg ✅
-
-INICIO
-
-- el boton ver presentacion muestra video (alvaro me lo pasa) ✅
-- disminuir espacio despues de logos ✅
 
 SERVICIOS
 
-- Se va "vive la experiencia" del banner ✅
 - "Elegí calidad de trabajo" usa la misma imagen que el banner. ⌛
 - La imagen de "Nuestra dedicacion" cambia por servicio (alvaro) ⌛
-- En todos los servicios agregar al inicio un bloque introductorio: titulo y descripcion, sin borde. ✅
-- Copiar de limpieza de sillones y sofas ✅
-- Agregar un form (telefono requerido) y combo para seleccionar el servicio al final. (https://mvdwash.com.uy/html/demo-accounting-contact.html) ✅
-
-- Agregar un boton al incio que lleve al formulario ✅
-
-- Otros servicios que te pueden interesar (todos excepto el actual) ✅
 
 PREGUNTAS FRECUENTES
 
 - agregar dos preguntas mas
-- agregar las preguntas frecuentes en todos los servicios ✅
 
 MENU
-
-- se va trabajos ✅
 - sobre mvdwash la trabaja alvaro 
 
 CONTACTO
@@ -39,20 +18,4 @@ CONTACTO
 - Se va "Call or visit..." 
 - 097 800 050
 
-PASS
-
-- cPanel
-CPanel 
-mvdwash.com.uy - 
-usuario: mvdwash - 
-contrasena: W-D#$c!x=iRY
-
-- FTP
-mvdwash
-
-
-FOOTER
-
-Poner el logo de whatsapp fijo abajo a la derecha ✅
-
-
+--------------------
