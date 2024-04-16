@@ -5,13 +5,13 @@ if( ! empty( $_POST['email'] ) ) {
 	$enable_smtp = 'no'; // yes OR no
 
 	// Email Receiver Address
-	$receiver_email = 'brfignoni@gmail.com';
+	$receiver_email = 'mvdwash@gmail.com';
 
 	// Email Receiver Name for SMTP Email
-	$receiver_name 	= 'Your Name';
+	$receiver_name 	= 'Álvaro';
 
 	// Email Subject
-	$subject = 'Contact form details';
+	$subject = 'Nuevo correo desde Mvd Wash';
 
 	// Google reCaptcha secret Key
 	$grecaptcha_secret_key = 'YOUR_SECRET_KEY';
@@ -36,12 +36,12 @@ if( ! empty( $_POST['email'] ) ) {
 		// verify the response
 		if( isset( $_POST['action'] ) && ! ( isset( $arrResponse['success'] ) && $arrResponse['success'] == '1' && $arrResponse['action'] == $_POST['action'] && $arrResponse['score'] = 0.5 ) ) {
 
-			echo '{ "alert": "alert-danger", "message": "Your message could not been sent due to invalid reCaptcha!" }';
+			echo '{ "alert": "alert-danger", "message": "Tu mensaje no pudo ser enviado debido a un reCaptcha inválido!" }';
 			die;
 
 		} else if( ! isset( $_POST['action'] ) && ! ( isset( $arrResponse['success'] ) && $arrResponse['success'] == '1' ) ) {
 
-			echo '{ "alert": "alert-danger", "message": "Your message could not been sent due to invalid reCaptcha!" }';
+			echo '{ "alert": "alert-danger", "message": "Tu mensaje no pudo ser enviado debido a un reCaptcha inválido!" }';
 			die;
 		}
 	}
@@ -74,7 +74,7 @@ if( ! empty( $_POST['email'] ) ) {
 				$response[] = $fieldname . ': ' . $fieldvalue;
 			} else {
 				$fieldname = '<tr>
-									<td align="right" valign="top" style="border-top:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 5px 7px 0;">' . $fieldname . ': </td>';
+									<td align="left" valign="top" style="border-top:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 5px 7px 0;"><strong>' . $fieldname . ': </strong></td>';
 				$fieldvalue = '<td align="left" valign="top" style="border-top:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 0 7px 5px;">' . $fieldvalue . '</td>
 								</tr>';
 				$response[] = $fieldname . $fieldvalue;
@@ -86,9 +86,9 @@ if( ! empty( $_POST['email'] ) ) {
 				<title>HTML email</title>
 			</head>
 			<body>
-				<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+				<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0"> 
 				<tr>
-				<td colspan="2" align="center" valign="top"><img style="margin-top: 15px;" src="http://www.yourdomain.com/images/logo-email.png" ></td>
+				<td colspan="2" align="left" valign="top"><img style="margin-top: 15px;" src="https://mvdwash.com.uy/assets/images/favicon/apple-touch-icon.png" alt="mvdwash logo" title="mvdwash logo"></td>
 				</tr>
 				<tr>
 				<td width="50%" align="right">&nbsp;</td>
@@ -115,10 +115,10 @@ if( ! empty( $_POST['email'] ) ) {
 				}
 
 			   	//Success Message
-			  	echo '{ "alert": "alert alert-success alert-dismissable", "message": "Your message has been sent successfully!" }';
+			  	echo '{ "alert": "alert alert-success alert-dismissable", "message": "Gracias, responderemos a la brevedad!" }';
 			} else {
 				//Fail Message
-			  	echo '{ "alert": "alert alert-danger alert-dismissable", "message": "Your message could not been sent!" }';
+			  	echo '{ "alert": "alert alert-danger alert-dismissable", "message": "Tu mensaje no pudo ser enviado!" }';
 			}
 			
 		} else { // SMTP
@@ -163,14 +163,14 @@ if( ! empty( $_POST['email'] ) ) {
 				}
 
 			   	//Success Message
-			  	echo '{ "alert": "alert alert-success alert-dismissable", "message": "Your message has been sent successfully!" }';
+			  	echo '{ "alert": "alert alert-success alert-dismissable", "message": "Gracias, responderemos a la brevedad!" }';
 			} else {
 				//Fail Message
-			  	echo '{ "alert": "alert alert-danger alert-dismissable", "message": "Your message could not been sent!" }';
+			  	echo '{ "alert": "alert alert-danger alert-dismissable", "message": "Tu mensaje no pudo ser enviado!" }';
 			}
 		}
 	}
 } else {
 	//Empty Email Message
-	echo '{ "alert": "alert alert-danger alert-dismissable", "message": "Please add an email address!" }';
+	echo '{ "alert": "alert alert-danger alert-dismissable", "message": "Por favor, añade una dirección de correo electrónico!" }';
 }

@@ -13,24 +13,7 @@
     />
     <meta name="author" content="MvdWash">
     <title>Productos Exclusivos | MvdWash</title>
-    <!-- favicon icon -->
-<!-- <link
-  rel="icon"
-  type="image/x-icon"
-  href="/assets/images/favicon/favicon.ico"
-/>
-<link
-  rel="apple-touch-icon"
-  sizes="152x152"
-  href="/assets/images/favicon/apple-touch-icon.png"
-/>
-<link
-  rel="icon"
-  type="image/png"
-  sizes="32x32"
-  href="/assets/images/favicon/favicon-32x32.png"
-/> -->
-<link
+    <link
   rel="icon"
   type="image/png"
   sizes="16x16"
@@ -137,7 +120,7 @@
                   >
                 </li>
                 <li>
-                  <a href="/servicios/limpieza-alfombras-y-moquettes.html"
+                  <a href="/servicios/limpieza-alfombras-y-moquettes/"
                     >Alfombras y Moquettes</a
                   >
                 </li>
@@ -846,6 +829,9 @@ Aprovechemos todo lo que la vida nos ofrece en el momento presente. Por esta sim
                 </div>
                 <!-- start contact form -->
                 <form action="/assets/email-templates/contact-form.php" method="post" class="row contact-form-style-02">
+                    <div class="col-md-6 mb-30px d-none">
+                      <input class="d-none input-name form-control required" type="text" id="formulario" name="formulario" value="productos-exclusivos"/>
+                    </div>
                     <div class="col-md-6 mb-30px">
                         <input class="input-name form-control required" type="text" name="nombre" placeholder="Tu nombre*" />
                     </div>
@@ -856,10 +842,10 @@ Aprovechemos todo lo que la vida nos ofrece en el momento presente. Por esta sim
                         <input class="form-control required" type="tel" name="telefono" placeholder="Tu teléfono" />
                     </div>
                     <div class="col-md-6 mb-30px">
-                        <input class="form-control" type="text" name="asunto" placeholder="Presupuesto limpieza de sillones" />
+                        <input class="form-control" type="text" name="asunto" placeholder="Presupuesto para productos exclusivos" value="Presupuesto para productos exclusivos"/>
                     </div>
                     <div class="col-md-12 mb-30px d-none">
-                        <input hidden class="form-control" type="text" name="servicio" placeholder="limpieza-sillones" />
+                        <input hidden class="form-control" type="text" name="servicio" placeholder="productos-exclusivos" />
                     </div>
                     <div class="col-md-12 mb-30px">
                         <textarea class="form-control" cols="40" rows="4" name="mensaje" placeholder="Your message"></textarea>
