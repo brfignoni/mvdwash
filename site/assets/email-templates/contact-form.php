@@ -11,7 +11,7 @@ if (! empty($_POST['email'])) {
 	$receiver_name 	= 'Álvaro';
 
 	// Email Subject
-	$subject = 'Nuevo correo desde Mvd Wash';
+	$subject = 'Mvd Wash | ' . $_POST['email'];
 
 	// Google reCaptcha secret Key
 	$grecaptcha_secret_key = 'YOUR_SECRET_KEY';
